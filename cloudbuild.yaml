@@ -5,7 +5,7 @@ steps:
   entrypoint: npm
   args: ["install", "-g", "anypoint-cli-v4"]
 - name: ubuntu
-  args: ["echo", "$PATH"] 
+  args: ["echo", $PATH] 
 - name: node
   entrypoint: anypoint-cli-v4
   args: [' --version']
