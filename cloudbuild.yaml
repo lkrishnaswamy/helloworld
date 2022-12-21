@@ -2,7 +2,7 @@ steps:
 - name: ubuntu
   script: echo hello
 - name: node
-  entrypoint: npm
+ # entrypoint: npm
 - name: node
   entrypoint: npm
   args: ["install", "-g", "anypoint-cli-v4"]
