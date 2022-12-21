@@ -1,6 +1,9 @@
 steps:
 - name: ubuntu
   script: echo hello
-- name: maven:3.3-jdk-8
-  entrypoint: mvn
-  args: ['clean','deploy', '-DmuleDeploy']
+- name: node
+    entrypoint: npm
+    args: ["install", "-g", "anypoint-cli-v4"]  
+#- name: maven:3.3-jdk-8
+#  entrypoint: mvn
+#  args: ['clean','deploy', '-DmuleDeploy']
