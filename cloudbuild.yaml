@@ -4,10 +4,8 @@ steps:
 - name: node
   entrypoint: npm
   args: ['list']
-- name: ubuntu
-  script: npm list
-#- name: maven:3-jdk-8
-#  entrypoint: mvn
-#  args: ['install']
-#- name: 'gcr.io/cloud-builders/docker'
-#   args: [ 'build', '-f', 'DockerFile', '.' ]
+- name: maven:3-jdk-8
+  entrypoint: mvn
+  args: ['install']  
+- name: 'gcr.io/cloud-builders/docker'
+   args: [ 'build', '-f', 'DockerFile', '.' ]
