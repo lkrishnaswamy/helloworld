@@ -8,4 +8,4 @@ steps:
   entrypoint: mvn
   args: ['install']  
 - name: 'gcr.io/cloud-builders/docker'
-   args: [ 'build', '-f', 'DockerFile', '.' ]
+  args: [ 'build', '-f', 'DockerFile', '.' ]
