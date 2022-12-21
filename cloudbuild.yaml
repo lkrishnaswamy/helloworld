@@ -1,3 +1,8 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'europe-west3-docker.pkg.dev/advance-age-372109/mule/mule-cicd-anypointcli', '.' ]
+- name: ubuntu
+  script: echo hello
+- name: node
+  entrypoint: npm
+- name: node
+  entrypoint: npm
+  args: ["install", "-g", "anypoint-cli-v4"]
