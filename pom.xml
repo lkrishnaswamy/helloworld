@@ -30,7 +30,7 @@
 					<muleVersion>${app.runtime}</muleVersion>
 					<username>lkswamy</username>
 					<password>11-Feb-1995</password>
-					<applicationName>hello-world</applicationName>
+					<applicationName>hello-world-lkswamy-21122022</applicationName>
 					<environment>prod</environment>
 					<region>us-east-1</region>
 					<workers>1</workers>
