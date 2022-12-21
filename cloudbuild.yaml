@@ -13,3 +13,9 @@ steps:
   - '-c'
   - |
     npm install -g anypoint-cli-v4 --force
+- name: node
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    anypoint-cli-v4 --version
