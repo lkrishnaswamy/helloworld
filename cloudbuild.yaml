@@ -12,4 +12,4 @@ steps:
   args:
   - '-c'
   - |
-    npm install -g anypoint-cli-v4
+    npm install -g anypoint-cli-v4 --force
