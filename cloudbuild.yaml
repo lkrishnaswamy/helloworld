@@ -1,11 +1,6 @@
 steps:
-- name: bash
-  script: |
-    #!/usr/bin/env bash
-    echo "Hello World"
 - name: ubuntu
   script: echo hello
-- name: "maven"
-  args: ["mvn", "--version"]
-- name: "maven"
-  args: ["mvn", "clean", "install"]
+- name: maven:3.3-jdk-8
+  entrypoint: mvn
+  args: ['--version','package','-Dmaven.test.skip=true']
