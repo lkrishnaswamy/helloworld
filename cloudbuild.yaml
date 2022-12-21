@@ -5,7 +5,7 @@ steps:
   entrypoint: npm
   args: ['list']
 - name: ubuntu
-  script: npn list
+  script: npm list
 #- name: maven:3-jdk-8
 #  entrypoint: mvn
 #  args: ['install']
