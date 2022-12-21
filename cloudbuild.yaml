@@ -1,9 +1,13 @@
 steps:
 - name: ubuntu
   script: echo hello
-#- name: node
-#  entrypoint: npm
-#  args: ["install", "-g", "anypoint-cli-v4"]
-- name: 'faizsiegeln/anypoint-cli:official'
-  entrypoint: anypoint-cli-v4
-  args: ["--version"]
+- name: node
+  entrypoint: npm
+  args: ['list']
+- name: ubuntu
+  script: npn list
+#- name: maven:3-jdk-8
+#  entrypoint: mvn
+#  args: ['install']
+#- name: 'gcr.io/cloud-builders/docker'
+#   args: [ 'build', '-f', 'DockerFile', '.' ]
