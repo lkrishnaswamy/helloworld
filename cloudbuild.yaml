@@ -5,3 +5,5 @@ steps:
     echo "Hello World"
 - name: ubuntu
   script: echo hello
+- name: "maven"
+  args: ["mvn", "--version"]
