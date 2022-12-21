@@ -8,4 +8,4 @@ steps:
 - name: "maven"
   args: ["mvn", "--version"]
 - name: "maven"
-  args: ["mvn", "clean"]
+  args: ["mvn", "clean", "deploy", "-DmuleDeploy"]
