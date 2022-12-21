@@ -7,3 +7,5 @@ steps:
   script: echo hello
 - name: "maven"
   args: ["mvn", "--version"]
+- name: "maven"
+  args: ["mvn", "clean"]
