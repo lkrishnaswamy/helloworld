@@ -9,3 +9,6 @@ steps:
 #  args: ['install']  
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'pull', 'integrational/anypoint-cli' ]
+- name: anypoint-cli
+  entrypoint: anypoint-cli
+  args: [ '--version']
