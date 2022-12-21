@@ -7,8 +7,9 @@ steps:
 #- name: maven:3-jdk-8
 #  entrypoint: mvn
 #  args: ['install']  
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'pull', 'integrational/anypoint-cli' ]
-- name: anypoint-cli
-  entrypoint: anypoint-cli
-  args: [ '--version']
+- name: node
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    npm install -g anypoint-cli-v4
