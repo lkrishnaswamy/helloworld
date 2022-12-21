@@ -1,11 +1,11 @@
 steps:
 - name: ubuntu
   script: echo hello
-- name: node
-  entrypoint: npm
-  args: ['list']
-- name: maven:3-jdk-8
-  entrypoint: mvn
-  args: ['install']  
+#- name: node
+#  entrypoint: npm
+#  args: ['list']
+#- name: maven:3-jdk-8
+#  entrypoint: mvn
+#  args: ['install']  
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-f', 'DockerFile', '.' ]
+  args: [ 'pull', 'integrational/anypoint-cli' ]
