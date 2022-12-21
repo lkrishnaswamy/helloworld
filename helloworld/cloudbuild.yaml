@@ -1,0 +1,7 @@
+steps:
+- name: bash
+  script: |
+    #!/usr/bin/env bash
+    echo "Hello World"
+- name: ubuntu
+  script: echo hello

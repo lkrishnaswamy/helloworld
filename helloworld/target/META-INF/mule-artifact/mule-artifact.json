@@ -1,0 +1,25 @@
+{
+  "configs": [
+    "helloworld.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "29914016-15b7-4852-b22a-949fd9aebd65:hello-world:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.4.0",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "log4j2.xml",
+        "helloworld.xml",
+        "config.yaml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
